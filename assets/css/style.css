@@ -277,6 +277,10 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
+.header h1 {
+  color: black;
+}
+
 .nav-open-btn {
   font-size: 3.5rem;
   color: var(--gunmetal);

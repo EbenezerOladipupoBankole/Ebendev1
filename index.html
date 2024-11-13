@@ -435,6 +435,7 @@
         - #CONTACT
       -->
 
+
       <section class="section contact" aria-label="contact" id="contact">
         <div class="container">
 
@@ -454,21 +455,23 @@
               </p>
 
             </div>
-
-            <form action="" class="contact-form" data-reveal="right">
-
+            
+            <form action="https://formspree.io/f/xjkvrawr" method="POST" class="contact-form" data-reveal="right">
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
-
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+                  <!-- Name input -->
+                  <input type="text" name="name" placeholder="Name *" required class="input-field">
+          
+                  <!-- Email input -->
+                  <input type="email" name="email_address" placeholder="Email *" required class="input-field">
               </div>
-
+          
+              <!-- Message textarea -->
               <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
+          
+              <!-- Submit button -->
               <button type="submit" class="btn btn-secondary">Send message</button>
-
-            </form>
-
+          </form>
+          
             <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript">
             // Initialize EmailJS with your user ID

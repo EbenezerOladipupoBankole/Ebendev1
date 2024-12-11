@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Prevents content from spilling out of hero */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%; /* Adjust padding for responsiveness */
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    align-items: flex-start;
+}
+
+span {
+    color: green;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px; /* Increased padding for more spacing */
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: color 0.3s ease; /* Faster transition */
+}
+
+.Register-btn {
+    background-color: #c3f3c3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+
+.Register-btn:hover {
+    background-color: #a1d8a1; /* Darker shade on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px; /* Add some space to the left */
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+}
